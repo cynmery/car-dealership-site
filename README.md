@@ -12,6 +12,7 @@ The main focus of this project was to put usability design practices to the test
   7. Heuristic Evaluation
 
 ## Built With
--HTML
--CSS
--InVision
+
+- HTML
+- CSS
+- InVision
