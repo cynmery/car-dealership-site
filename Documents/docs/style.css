@@ -1,0 +1,628 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    min-height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    min-height: 100%; 
+}
+
+p{
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 35px;
+    color:black;
+}
+
+header{
+    width:100%;
+    position: fixed;
+    top:0;
+    background-color: rgb(242 242 242);
+}
+
+.container{
+    display: flex;
+    justify-content: left;
+    height: 100%;
+    padding: 0 20px 0 20px;
+    z-index: 100;
+}
+
+li.address{
+    background-image: url(images/pin.png);
+    background-position: left center;
+    background-size: 3em;
+    background-repeat: no-repeat;
+    padding: 10px 0px 20px 55px;
+    margin-left: 0px;   
+}
+
+li.phone{
+    background-image: url(images/phone.png);
+    background-position: left center;
+    background-size: 2em;
+    background-repeat: no-repeat;
+    padding: 15px 0px 8px 50px;
+    margin-left: 5px;
+
+}
+
+li.email{
+    background-image: url(images/email.png);
+    background-position: left center;
+    background-size: 2em;
+    background-repeat: no-repeat;
+    padding: 10px 0px 15px 50px;
+    margin-left: 5px; 
+}
+
+ul.companyinfo{
+    list-style: none;
+    padding:0px;
+    font-weight: bold;
+    font-size: 16px;   
+}
+
+#logo img{
+    width: auto;  
+}
+
+#title{
+    width:40%;
+    /*margin-left: -40px;*/
+}
+
+#headerlogo{
+    margin-left:30px;
+    margin-top: 8px;
+}
+
+#mobile-logo{
+    display: none;
+    height: 110px;
+}
+
+nav{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   align-content:space-between;
+
+}
+
+nav .menu{
+    display: flex;
+}
+
+nav a{
+    font-size: 0.80em;
+    text-align: center;
+    display: block;
+    margin-right: 10px;
+    font-weight:bolder;
+    align-self: center; 
+    width:8em;
+    color:black;
+    text-decoration: none;
+}   
+
+nav a:hover{
+    color:rgb(252, 133, 36);
+}
+
+.search-bar{
+    width: 15em;
+
+}
+
+.searchbar{
+    border: 3px solid black;
+    border-radius: 12px;
+    width: 100%;
+    height:2em;
+    font-size: 0.80em;
+    display:inline-block;
+    vertical-align: middle;
+    padding-left: 9px;  
+    background-image: url(images/searchicon.png);
+    background-position: 98%;
+    background-repeat: no-repeat;
+    background-size: 25px; 
+}
+
+nav form{
+    border:solid;
+    color:black;
+    border-radius: 12px;
+    width:90%; 
+}
+
+nav form input{
+    font-family:'Courier New', monospace; ;
+}
+
+.repeat{
+    background-image: url(images/backhero.png);
+}
+
+.section1{
+    background-image: url(images/try2.jpg);
+    background-size:100%;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-position: 0 40%;
+    /*background-size:75%;*/
+    width:100%;
+    height:27em;
+    display:flex;
+    justify-content: center;
+    align-content:flex-start;
+    margin-top:108px;
+
+}
+.section1 h1{
+flex-basis: 100%;
+text-align: center;
+border-bottom:none;
+margin-top: 50px;
+color:white;
+font-size: 50px;
+}
+
+.button{
+    width:350px;
+    border:none;
+    background-color: rgb(252, 133, 36);
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 100px;
+    margin-right:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 1em;
+    font-weight: bolder;
+    
+}
+.button:last-of-type{
+    margin-right:0px;
+}
+.button:hover{
+    background-color:rgb(241, 188, 145);
+    color:black;
+}
+
+.section2, .section3{
+    width:70vw;
+    margin: auto;
+    text-align: center;
+    margin-top:40px;
+}
+
+.section2 ul{
+    margin-top:25px;
+    list-style-position: inside;
+    list-style: none;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+/*.section2 li{
+    background-image: url(images/checkmark.png);
+    background-position: 25% center;
+    background-size: 2.5em;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    padding-top: 7px;
+    margin-bottom: 15px;
+}*/
+.section2 li{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    /*position: relative;*/
+}
+
+
+.section2 ul li::before{
+    background: url(images/checkmark.png) no-repeat;
+    display: inline-block;
+    background-position: center;
+    background-size: 2.5em;
+    width: 35px;
+    height: 27px;
+    content: '';
+    position: absolute;
+    left: 35%;
+    z-index: -1;
+}
+
+.section2 p{
+    width:50vw;
+    margin:auto;
+    margin-top: 25px;
+}
+.vehicles{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    height:100%;
+    width: 100%;
+    color:black;
+
+}
+.section3{
+    margin-top: 100px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 6%, rgba(255,99,0,1) 100%);
+}
+.section3 h1{
+
+    margin-top: 70px;
+}
+.vehicles img{
+    height:220px;
+    flex-basis: 33.333333%;
+    margin-left:10px;
+    width: 320px;
+}
+
+figure{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.background3{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 6%, rgba(255,99,0,1) 100%);
+
+}
+footer{
+    width:100%;
+    background-color: rgb(242, 242, 242);
+}
+
+.footercontainer{
+    width:85%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    align-items: center; 
+    
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer img{
+    max-width:300px;
+}
+
+footer a{
+    color:black;
+    text-decoration: none;
+    display: block;
+    font-size:16px;
+}
+
+.footer-column-one{
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 33.33%;
+}
+
+.footer-column-two{
+    flex-basis: 33.33%;
+    display:flex;
+    justify-content: center;
+}
+
+.footer-column-three{
+    flex-basis: 33.33%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Responsive Navigation Bar */
+
+input[type=checkbox]{
+    display: none;
+}
+
+.hamburger{
+    display: none; 
+    font-size: 24px;
+    user-select: none;
+}
+
+@media only screen and (max-width:1350px){
+    
+    .hamburger{
+        display: block;
+        z-index: 6; 
+        position: absolute;
+        bottom: 50%;
+    }
+
+    nav{
+        align-self: flex-end;
+    }
+
+    nav .menu{
+        overflow: hidden;
+        visibility: hidden;
+        max-height: 0;
+        position: absolute;
+        background-color: rgb(242 242 242);;
+        right: 0;
+        left: 0;
+        top:0.5%;
+        padding: 16px 0;
+        padding-top: 5px;
+        
+    }
+
+    .search-bar{
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    input.searchbar{
+        width: 20em;
+        background-image: url(images/searchicon.png);
+        background-position: 98%;
+        background-repeat: no-repeat;
+        background-size: 25px;
+    }
+
+    .menu a{
+        padding-top: 20px;
+    }
+
+    .menu a:hover{
+        display: inline-block;
+        background-color: #4c9e9e;
+        /*transition: 0.4s ease;*/
+    }
+
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+        visibility:visible;
+        max-height: 200px;
+        padding-top: 6em;
+        transition: 0.8s ease;
+    }
+
+    nav a{
+        all: unset;
+        font-size: 0.80em;
+        text-align: center;
+        display: block;
+        margin-right: 10px;
+        font-weight: bolder
+    }
+
+    #headerlogo{
+        z-index: 5;
+    }
+
+    .container{
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    .section1{
+        background-image: url(images/try2.jpg);
+        background-size: cover;
+
+    }
+
+    .section2 ul li::before{
+        left: 30%;
+    }
+
+    figure{
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    input[type=checkbox]:checked ~ .menu {
+        padding-top: 4em;
+    }
+
+    .section1{
+        height: 20em;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .button{
+        width: 35%;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .section2 p {
+        width: 100%;
+    }
+
+    .section2 ul li::before{
+        left: 20%;
+    }
+
+   .footercontainer{
+    flex-direction: column;
+    padding-top: 15px;
+   }
+
+   .footer-column-two{
+    order: 1;
+   }
+
+   .footer-column-one{
+    order: 2;
+    
+   }
+
+   .footer-column-one .social{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+   }
+
+   .footer-column-three{
+    margin-top: 10px;
+    order:3;
+   }
+
+   .footercontainer .navigation{
+    display: none;
+   }
+
+  }
+
+  @media only screen and (max-width: 724px) and (min-width: 622px) {
+    .button{
+        width: 40%;
+    }
+
+  }
+
+  @media only screen and (max-width: 621px) and (min-width: 421px) {
+    #headerlogo{
+        height: 90px;
+        margin-left: 0;
+        }
+    .section1{
+        margin-top: 100px;
+        background-position: 90%;
+    }
+
+    .button{
+        width: 48%;
+        font-size: 0.8em;
+        line-height: 60px;
+    }
+
+    .section1 h1{
+        font-size: 35px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .section2 li{
+        font-size: 16px;
+    }
+
+    .section2 ul li::before{
+        left: 10%;
+
+    }    
+
+
+  }
+
+
+  @media only screen and (max-width: 448px) {
+
+  #headerlogo{
+    height: 70px;
+    margin-left: 0;
+    }
+
+    .section1{
+        margin-top: 100px;
+        background-position: 90%;
+    }
+
+    .section1 h1{
+        font-size: 35px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .button {
+        line-height: 20px;
+        padding: 5px;
+        font-size: 0.8em;
+        width: 40%;
+    }
+
+    .section2, .section3{
+        width: 75vw;
+    }
+
+    .section2 ul li::before{
+        background-size: 2em;
+        left: 5%;
+    }
+
+     li, .section2 p{
+        font-size: 15px;
+    }
+
+    .vehicles img {
+        width: 300px;
+        margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+    #headerlogo{
+        height: 60px;
+    }
+
+    .section1{
+        margin-top: 80px;
+    }
+    
+    .button{
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    }
+
+    li{
+        font-size: 14px;
+    }
+
+}
